@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Step Verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Two-Step Verification</h1>
+
+        <!-- Login Form -->
+        <div id="login-section">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Username" required><br>
+                <input type="password" id="password" placeholder="Password" required><br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <!-- Push Notification Message (Simulated) -->
+        <div id="notification-section" class="hidden">
+            <h2>Push Notification</h2>
+            <button id="approve-push">Approve Push Notification</button>
+        </div>
+
+        <!-- Pattern Drawing -->
+        <div id="pattern-section" class="hidden">
+            <h2>Draw Your Pattern</h2>
+            <canvas id="pattern-canvas" width="300" height="300"></canvas>
+            <button id="submit-pattern">Submit Pattern</button>
+        </div>
+
+        <!-- Result Message -->
+        <div id="result-section" class="hidden">
+            <h2 id="result-message"></h2>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

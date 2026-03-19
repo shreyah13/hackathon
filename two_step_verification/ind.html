@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COCO Bank Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-page">
+        <h2>Welcome to COCO Bank</h2>
+        <p>Please enter your login credentials</p>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your username">
+
+        <label for="iriscolor">Iris Color:</label>
+        <input type="text" id="iriscolor" placeholder="Enter your iris color">
+
+        <label for="birthplace">Birthplace:</label>
+        <input type="text" id="birthplace" placeholder="Enter your birthplace">
+
+        <button onclick="verifyLogin()">Submit</button>
+    </div>
+
+    <div id="notification" class="notification">
+        Push Notification: Click here to approve login!
+    </div>
+
+    <div id="pattern-page" style="display: none;">
+        <h3>Draw password pattern </h3>
+        <canvas id="patternCanvas" width="400" height="400"></canvas>
+        <button id="submitPattern" onclick="submitPattern()">Submit</button>
+    </div>
+
+    <div id="result-message"></div>
+
+    <div id="timer" class="timer" style="display: none;">30s</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
